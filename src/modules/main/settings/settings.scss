@@ -1,0 +1,244 @@
+@import '../../../style/var';
+
+.settings-wrapper {
+  background-color: $contrastColor;
+  padding: 0px 5px 20px;
+  min-width: 400px;
+  max-width: 400px;
+  text-align: center;
+}
+
+.filter-title {
+  font-family: 'Roboto Serif';
+  font-style: italic;
+  font-size: 22px;
+  padding: 15px;
+  text-align: center;
+}
+
+.search-form {
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+.search-form__search-field {
+  margin-right: 10px;
+  width: 80%;
+  padding: 5px 15px;
+  border-radius: 25px;
+  outline: none;
+  box-shadow: 0 0 5px 5px transparent;
+  border: 1px solid transparent;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+.search-form__search-field:hover {
+  box-shadow: 0 0 5px 5px $borderColor;
+}
+
+.search-form__search-field:focus {
+  box-shadow: 0 0 5px 5px $borderColor;
+  border: 1px solid $borderColor;
+}
+
+.search-form__search-btn {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  fill: #000;
+  stroke: none;
+  transition: .3s ease-in-out;
+}
+
+.search-form__search-btn:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.popularity {
+  display: flex;
+  justify-content: center;
+}
+
+.popularity-lbl {
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 700;
+  transition: all .3s ease-in-out;
+  cursor:pointer;
+}
+
+.popularity-check {
+  margin: 0 0 0 20px;
+  transform:scale(1.4);
+  opacity:0.9;
+  cursor:pointer;
+}
+
+.popularity-lbl:hover {
+  transform: scale(1.1);
+  text-shadow: 0 0 5px $bgColor;
+}
+
+.popularity-lbl:hover .popularity-check {
+  transform: scale(1.8);
+}
+
+.sort {
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+}
+
+.sort-field {
+  margin-right: 10px;
+  margin-bottom: 20px;
+  width: 80%;
+  padding: 5px 15px;
+  border-radius: 25px;
+  outline: none;
+  box-shadow: 0 0 5px 5px transparent;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+.sort-field:hover {
+  box-shadow: 0 0 5px 5px $borderColor;
+}
+
+.range-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  padding: 5px 15px;
+}
+
+.range-field {
+  width: 75px;
+  background-color: $contrastColor;
+  color: $bgColor;
+  padding: 10px;
+  border-radius: 25px;
+  text-align: center;
+  outline: none;
+}
+
+.range-field::-webkit-outer-spin-button,
+.range-field::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+.filters-value {
+  padding-bottom: 20px;
+  }
+  
+
+.checkbox-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkbox-lbl {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+  color: $bgColor;
+  font-weight: 400;
+  font-style: italic;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+.checkbox-lbl:hover {
+  transform: scale(1.1);
+  text-shadow: 0 0 5px $textColor;
+}
+
+.check {
+  margin: 5px 0 0 0;
+  transform:scale(1.4);
+  opacity:0.9;
+  cursor:pointer;
+}
+
+.popularity-check {
+  margin: 0 0 0 20px;
+}
+
+.settings-btn {
+  margin-right: 10px;
+  padding: 5px 15px;
+  border-radius: 25px;
+  border: 1px solid transparent;
+  outline: none;
+  transition: all .3s ease-in-out;
+}
+
+.settings-btn:hover {
+  box-shadow: 0 0 5px 5px $borderColor;
+  border-color: $borderColor;
+}
+
+// .button-color {
+//   width: 30px;
+//   height: 30px;
+//   border: 1px solid $borderColor;
+//   border-radius: 20px;
+//   outline: none;
+//   opacity: .7;
+//   color: transparent;
+//   font-size: 20px;
+//   cursor: pointer;
+//   transition: all .3s ease-in-out;
+// }
+
+// .button-color:hover {
+//   opacity: 1;
+// }
+
+// .button-grey {
+//   background-color: grey;
+// }
+
+// .button-green {
+//   background-color: green;
+// }
+
+// .button-black {
+//   background-color: black;
+// }
+
+// .button-red {
+//   background-color: red;
+// }
+
+// .button-white {
+//   background-color: white;
+// }
+
+// .button-blue {
+//   background-color: blue;
+// }
+
+// .button-yellow {
+//   background-color: yellow;
+// }
+
+//   .button-color-active {
+//     color: $bgColor;
+//     opacity: 1;
+//   }
+
+//   .button-color-active-negative {
+//     color: $textColor;
+//     opacity: 1;
+//   }
+

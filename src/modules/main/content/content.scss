@@ -1,0 +1,87 @@
+@import '../../../style/var';
+
+.content-wrapper {
+  display: flex;
+  align-self: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  text-align: center;
+  font-size: 60px;
+  color: $contrastColor;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 250px;
+  height: 400px;
+  padding: 10px 0;
+  justify-content: space-between;
+  align-items:center;
+  text-align: center;
+  color: $textColor;
+  border: 2px solid transparent;
+  border-radius: 2px;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+
+.card__image-wrapper {
+  overflow: hidden;
+}
+
+.card__title {
+font-size: 16px;
+}
+
+.card__subtitle {
+  font-size: 16px;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.card__description {
+font-size: 14px;
+}
+
+.card:hover {
+  background-color: $hoverCard;
+  border-color: $borderColor;
+}
+
+.card:hover .card__image {
+  transform: scale(1.1);
+}
+
+.card-active {
+  background-color: $activeCard;
+  border-color: $borderColor;
+}
+
+.card-active:hover {
+  background-color: $activeCard;
+  border-color: $borderColor;
+}
+
+.card-active:hover .card__image {
+  transform: scale(1);
+}
+
+.settings-btn {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.settings-btn-active {
+  background-color: $contrastColor;
+  color: $bgColor;
+}
+
+@media (max-width: 720px) {
+  .content-wrapper {
+    align-items: center;
+    justify-content: center;
+  }
+}

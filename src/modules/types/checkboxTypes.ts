@@ -1,0 +1,1 @@
+export type checkboxFilterTypes = 'brand' | 'color' | 'owners';

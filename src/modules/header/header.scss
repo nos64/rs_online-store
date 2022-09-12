@@ -1,0 +1,43 @@
+@import '../../style/var';
+
+.header {
+  border-bottom: 3px solid $borderColor;
+  box-shadow: 0 10px 15px $borderColor;
+}
+
+.header__container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.header__title {
+  text-shadow: 5px 5px 5px $borderColor;
+}
+
+.header__basket-wrapper {
+  display: flex;
+  position: relative;
+  padding-right: 20px;
+}
+
+.header__basket {
+  width: 32px;
+  height: 100%;
+}
+
+.header_basket-count {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 40%;
+  text-align: center;
+  font-size: 18px;
+  background-color: $borderColor;
+  color: $bgColor;
+  opacity: 0;
+}

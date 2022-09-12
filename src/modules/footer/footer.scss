@@ -1,0 +1,52 @@
+@import '../../style/var';
+
+footer {
+  box-shadow: 0 -10px 15px $borderColor;
+}
+
+.footer__container {
+  font-size: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  padding: 10px ;
+}
+
+.footer__left {
+  display: flex;
+  gap: 15px;
+}
+
+.footer__link {
+  transition: color .3s ease-in;
+}
+
+.footer__link:hover {
+  color: $contrastColor;
+}
+
+.footer__logo-course {
+  width: 135px;
+  height: auto;
+  opacity: .5;
+  transition: all .3s ease-in;
+}
+
+.footer__logo-course:hover {
+  opacity: 1;
+}
+
+.topbutton {
+  width: 30px;
+  height: 20px;
+  border:none;
+  position:fixed;
+  bottom:130px;
+  right: 5px;
+  opacity: .5;
+  transition: all .3s ease-in;
+}
+
+.topbutton:hover {
+  opacity: 1;
+}
